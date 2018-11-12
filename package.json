@@ -2,5 +2,19 @@
   "name": "boilerplate-node-ts",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node lib",
+    "build": "babel src --out-dir lib --extensions .ts",
+    "watch": "babel src --out-dir lib --extensions .ts -w"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "typescript": "^3.1.5"
+  }
 }
